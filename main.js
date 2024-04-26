@@ -1,14 +1,28 @@
 "use strict";
-/* 36 T-Shirt: Write a function called make_shirt() that accepts a size and the text of a
- message that should be printed on the shirt. The function should print a sentence
- summarizing the size of the shirt and the message printed on it. Call the functon*/
-function make_shirt(size, label) {
-    //return size +label
-    return `my shirt size is ${size} and ${label}`;
-}
-let myfun = make_shirt(36, " The sunny day");
-console.log(myfun);
-let myfun2 = (size, label) => {
+/*37 Large Shirts: Modify the make_shirt() function so that shirts are large by default
+ with a message that reads I love TypeScript. Make a large shirt and a medium shirt with
+  the default message, and a shirt of any size with a different message.*/
+/*  function make_shirt(size :string ,label :string){
+    return size + label
+  }
+let  myfunction = make_shirt("large" ," I love typescript")
+
+console.log(myfunction);*/
+//making large as default
+function make_shirt(label, size = "large") {
     return size + label;
-};
-console.log(myfun2(36, "the cool day"));
+}
+let myfunction = make_shirt(" I love typescript");
+console.log(myfunction);
+//making medium as default
+function make_shirt2(label, size = "medium") {
+    return size + label;
+}
+let myfunction2 = make_shirt2(" I love typescript");
+console.log(myfunction2);
+//making any size
+function make_shirt3(label, size) {
+    return size + label;
+}
+let myfunction3 = make_shirt3(" any size ", " I love typescript");
+console.log(myfunction3);
