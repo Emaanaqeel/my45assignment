@@ -1,19 +1,33 @@
-/*15 Changing Guest List: You just heard that one of your guests can’t make the dinner, so
- you need to send out a new set of invitations. You’ll have to think of someone else to
-  invite.
-  • Start with your program from Exercise 14. Add a print statement at the end of
-   your program stating the name of the guest who can’t make it.
-• Modify your list, replacing the name of the guest who can’t make it with the
- name of the new person you are inviting.
-• Print a second set of invitation messages, one for each person who is still in
- your list.*/
+/*16 More Guests: You just found a bigger dinner table, so now more space is available.
+ Think of three more guests to invite to dinner.
+• Start with your program from Exercise 15. Add a print statement to the end of your
+  program informing people that you found a bigger dinner table.
+• Add one new guest to the beginning of your array.
+• Add one new guest to the middle of your array. 
+• Use append() to add one new guestto the end of your list. 
+• Print a new set of invitation messages, one for each person  in your list.*/
 
- let myGuest :string[]=["emaan ","laiba","erum","asma"];
+let myGuest :string[]=["emaan ","laiba","erum","asma"];
+console.log(myGuest);
 
- console.log(`due to some personal reason ${myGuest[1]} will not come on dinner` );
- myGuest[1]="shanaya";
-console.log(`new list of myGuest who are coming to my dinner\n`);
+console.log(`we have 3 more guests to invite on dinner\n`);
 
- for(let e = 0; e < myGuest.length; e++){
-    console.log(`${e+1}.${myGuest[e]}`);
- }
+//add three more guest
+//at th begining
+
+myGuest.unshift("shanaya");
+console.log(myGuest);
+
+//at the middle
+myGuest.splice(2,0, "fatima");
+console.log(myGuest);
+
+//at the last
+
+myGuest.push("saba");
+console.log(myGuest);
+
+//print all frindes list 
+for(let a = 0; a< myGuest.length;a++){
+    console.log(`hi ${myGuest[a]} you are inviteed on dinner` );
+}
