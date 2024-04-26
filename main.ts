@@ -1,16 +1,16 @@
-/*Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a
- car, and make a list that stores several examples. Use your list to print a series of
-  statements about these items, such as “I would like to own a Honda motorcycle.”*/
+/* 14 Guest List: If you could invite anyone, living or deceased, to dinner, who would you
+ invite? Make a list that includes at least three people you’d like to invite to dinner.
+  Then use your list to print a message to each person, inviting them to dinner*/
 
-  let myTransportation:string[] =["car","bike","bus","train","aeroplane"];
+  let myGuest : string[] = ["emaan","erum","laiba","muzaina","asma"];
 
-  //1st method (loop)
+  //1st method loop
 
-  for(let i =0; i< myTransportation.length; i++){
-    console.log(`I would like to own a ${myTransportation[i]}`);
-
+  for(let i = 0;i< myGuest.length; i++){
+    console.log(`hi ${myGuest[i]} you are invited for dinner on monday at my place\n`);
   }
- //2nd method
- //myTransportation.map((a)=>{
-    //console.log(`I would like to own a ${a}`)
-// })
+  // 2 method map
+  //myGuest.map((ib)=>{
+  //  console.log(`hi ${myGuest[ib]} you are invited for dinner on monday at my place\n`);
+  
+ // })
