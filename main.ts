@@ -1,27 +1,39 @@
-/*27 Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
-• If the alien is green, print a message that the player earned 5 points.
+/* 28 Stages of Life: Write an if-else chain that determines a person’s stage of life.
+ Set a value for the variable age, and then:
+• If the person is less than 2 years old, print a message that the person is a baby.
 
-• If the alien is yellow, print a message that the player earned 10 points.
+• If the person is at least 2 years old but less than 4, print a message that the person 
+is a toddler.
 
-• If the alien is red, print a message that the player earned 15 points.
+• If the person is at least 4 years old but less than 13, print a message that the person
+ is a kid.
 
-• Write three versions of this program, making sure each message is printed for the 
-appropriate color alien.*/
+• If the person is at least 13 years old but less than 20, print a message that the person
+ is a teenager.
 
-//let aliencolor= "green"
-//let aliencolor= "yellow"
-//let aliencolor= "no color"
-let aliencolor= "red"
+• If the person is at least 20 years old but less than 65, print a message that the person
+ is an adult.
 
-if(aliencolor =="green"){
-    console.log(`player just earned 5 points`)
+• If the person is age 65 or older, print a message that the person is an elder.*/
+
+let personage = 20
+
+if(personage < 2){
+    console.log(`person is a baby`)
+}else if(personage>= 2 && personage <4){
+    console.log(`person is a toddler`)
 }
-else if(aliencolor =="yellow"){
-    console.log(`player just earned 10 points`)
+else if(personage>= 4 && personage <13 ){
+    console.log(`person is a kid`)
 }
-else if(aliencolor =="red"){
-    console.log(`player just earned 15 points`)
+else if(personage>= 13 && personage < 20 ){
+    console.log(`person is a teenager`)
 }
-else {
-    console.log(`player earned 0 points`)
+else if(personage>= 20 && personage <65 ){
+    console.log(`person is a adult`)
 }
+else if  (personage>= 65 ){
+    console.log(`person is a elder`)
+}
+
+
