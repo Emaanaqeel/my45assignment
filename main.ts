@@ -1,38 +1,29 @@
-/* 32 Checking Usernames: Do the following to create a program that simulates how websites
- ensure that everyone has a unique username.
-• Make a list of five or more usernames called current_users.
+/* 33 Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or
+ 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
+• Store the numbers 1 through 9 in a array.
 
-• Make another list of five usernames called new_users. Make sure one or two of the new 
-usernames are also in the current_users list.
+• Loop through the array.
 
-• Loop through the new_users list to see if each new username has already been used. 
-If it has, print a message that the person will need to enter a new username. 
-If a username has not been used, print a message saying that the username is available.
+• Use an if-else chain inside the loop to print the proper ordinal ending for each number.
+ Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be
+  on a separate line.*/
 
-• Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should
- not be accepted.*/
+  let myNumber = [1,2,3,4,5,6,7,8,9,];
+  //for loop
 
- let current_users = ["Emaan" ,"alia","erum","laiba","asma"]
+  for(let i =0 ; i < myNumber.length ;i++){
 
- let new_users = ["Aima","Dua","Laiba","fatima","Erum"]
-
- //we will use foreach method
- new_users.forEach(new_users => {
-let new_userlower = new_users.toLowerCase();
-//we will use some() method 
-let userNametaken = current_users.some(current_users => current_users.toLowerCase()
-=== new_userlower)
-
-//we will apply conditions
-
-if(userNametaken){
-    console.log(`${new_users} needs to choose another name because it's already 
-taken `)
-}else{
-    console.log(`${new_users} is new member added`);
-    current_users.push(new_users);
-
-}
-
- })
- console.log(current_users);
+    //we can use conditions
+    if(myNumber [i]== 1){
+        console.log(`${myNumber[i]}st`)
+    }
+    else if(myNumber [i]== 2){
+        console.log(`${myNumber[i]}nd`)
+    }
+    else if(myNumber [i]== 3){
+        console.log(`${myNumber[i]}rd`)
+    }
+    else if(myNumber [i]>= 4 && myNumber[i] <= 9){
+        console.log(`${myNumber[i]}th`)
+    }
+  }
