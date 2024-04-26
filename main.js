@@ -1,9 +1,10 @@
 "use strict";
-/*11 store the name of few of your friend in an array called names .print each person name
-by accessing each element in the list . one at a time*/
+/*Greetings: Start with the array you used in Exercise 11, but instead of just
+printing each person’s name, print a message to them. The text of
+ each message should be the same, but each message should be personalized with the
+ person’s name.*/
 let friendsName = ["emaan", "laiba", "erum", "asma"];
-//             index number   00        01     02     03
-console.log(friendsName[0]);
-console.log(friendsName[1]);
-console.log(friendsName[2]);
-console.log(friendsName[3]);
+console.log(`hello ${friendsName[0]}, how are you`);
+console.log(`hello ${friendsName[1]}, how are you`);
+console.log(`hello ${friendsName[2]}, how are you`);
+console.log(`hello ${friendsName[3]}, how are you`);
