@@ -1,10 +1,13 @@
-/* 19 Dinner Guests: Working with one of the programs from Exercises 14 through 18, print
- a message indicating the number of people you are inviting to dinner.*/
+/*20 think of something you could store in a array. For example, you could make a list of
+ mountains, rivers, countries, cities, languages, or anything else you’d like. Write a 
+ program that creates a list containing these items.*/
 
- let myGuest: string []=["asma","emaan","erum","laiba"]
+ let myList : string[] =["mountains","river","sea","ocean",];
 
- console.log(`I am inviting ${myGuest.length}friends to my dinner which are following\n`)
+ //making list 
+ myList.forEach((item)=>{
+    console.log(item);
 
- for(let i = 0; i< myGuest.length; i++){
-    console.log(`${i+1}. ${myGuest[i]}`)
  }
+
+ )
