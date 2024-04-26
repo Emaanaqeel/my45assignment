@@ -1,22 +1,16 @@
-/*34 Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names
- in a array, and then use a for loop to print the name of each pizza.
-• Modify your for loop to print a sentence using the name of the pizza instead of printing
- just the name of the pizza. For each pizza you should have one line of output containing
-  a simple statement like I like pepperoni pizza.
+/*35 Animals: Think of at least three different animals that have a common characteristic.
+ Store the names of these animals in a list, and then use a for loop to print out the name
+  of each animal. • Modify your program to print a statement about each animal, such as A 
+  dog would make a great pet. • Add a line at the end of your program stating what these 
+  animals have in common. You could print a sentence such as Any of these animals would
+   make a great pet!*/
 
-• Add a line at the end of your program, outside the for loop, that states how much you 
-like pizza. The output should consist of three or more lines about the kinds of pizza you
- like and then an additional sentence, such as I really love pizza!*/
+   let animalnames = ["goat","cow","sheep","camel"];
 
- let favorite_pizza = ["corn pizza","chicken tikka pizza","white sauce pizza"];
-//printing only pizza names
-
- for(let i = 0 ;i< favorite_pizza.length ;i++){
-      console.log(favorite_pizza[i])
- }
- //printing pizza name with message
-
- for(let i = 0 ;i< favorite_pizza.length ;i++){
-    console.log(`\nI like to eat ${favorite_pizza[i]}`)
- }
- console.log(`\nI really like pizza , because it comes in different flavor and toppings \n`)
+   for(let i of animalnames){
+    console.log([i]);
+   }
+   for(let k of animalnames){
+    console.log(`${k} is a domestic animal`)
+   }
+   console.log(`\nAll these animals  ${animalnames[0]},${animalnames[1]},${animalnames[2]},and ${animalnames[3]} meat is halal in islam \n`)
