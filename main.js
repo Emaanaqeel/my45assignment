@@ -1,23 +1,34 @@
 "use strict";
-/*31 No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
-• If the list is empty, print the message We need to find some users!
+/* 32 Checking Usernames: Do the following to create a program that simulates how websites
+ ensure that everyone has a unique username.
+• Make a list of five or more usernames called current_users.
 
-• Remove all of the usernames from your array, and make sure the correct message is
- printed.*/
-let userName = ["emaan", "admin", "erum", "asma", "laiba", "dua"];
-//remove all the name in the arry
-userName = [];
-//console.log(userName);
-if (userName.length > 0) {
-    for (let i = 0; i < userName.length; i++) {
-        if (userName[i] == "admin") {
-            console.log(`\nhello ${userName[i]},  would you like to see status report?\n`);
-        }
-        else {
-            console.log(`hello ${userName[i]} thank you for logginig in again!`);
-        }
+• Make another list of five usernames called new_users. Make sure one or two of the new
+usernames are also in the current_users list.
+
+• Loop through the new_users list to see if each new username has already been used.
+If it has, print a message that the person will need to enter a new username.
+If a username has not been used, print a message saying that the username is available.
+
+• Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should
+ not be accepted.*/
+Object.defineProperty(exports, "__esModule", { value: true });
+let current_users = ["Emaan", "alia", "erum", "laiba", "asma"];
+let new_users = ["Aima", "Dua", "Laiba", "fatima", "Erum"];
+//we will use foreach method
+new_users.forEach(new_users => {
+    let new_userlower = new_users.toLowerCase();
+    //we will use some() method 
+    let userNametaken = current_users.some(current_users => current_users.toLowerCase()
+        === new_userlower);
+    //we will apply conditions
+    if (userNametaken) {
+        console.log(`${new_users} needs to choose another name because it's already 
+taken `);
     }
-}
-else {
-    console.log(`we need to find some  users `);
-}
+    else {
+        console.log(`${new_users} is new member added`);
+        current_users.push(new_users);
+    }
+});
+console.log(current_users);
