@@ -1,17 +1,19 @@
-/*30 Hello Admin: Make a array of five or more usernames, including the name 'admin'. 
-Imagine you are writing code that will print a greeting to each user after they log in to
- a website. Loop through the array, and print a greeting to each user:
-• If the username is 'admin', print a special greeting, such as Hello admin, would you 
-like to see a status report?
+/*29Favorite Fruit: Make a array of your favorite fruits, and then write a series of
+ independent if statements that check for certain fruits in your array.
+• Make a array of your three favorite fruits and call it favorite_fruits.
 
-• Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.*/
+• Write five if statements. Each should check whether a certain kind of fruit is in your 
+array. If the fruit is in your array, the if block should print a statement, such as You 
+really like bananas!*/
 
-let userName :string[] =["laiba","erum","admin","asma","aima"]
-for(let i =0; i < userName.length ; i++){
-    if(userName[i]== "admin") {
-        console.log(`\nhello ${userName[i]},  would you like to see status report?\n`);
-    }
-    else  {
-        console.log(`hello ${userName[i]} thank you for logginig in again!`)
-    }
+let favorite_fruits = ["apple","banana","orange"]
+
+if(favorite_fruits.includes("mango")){
+    console.log(`I would like to eat mango`)
+}
+else if(favorite_fruits.includes("apple")){
+    console.log(`I would like to eat mango`)
+}
+else{
+    console.log(`fruits are not available`)
 }
