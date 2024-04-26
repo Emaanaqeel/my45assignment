@@ -1,6 +1,7 @@
-/*Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the
-/*following, including the quotation marks://
-Albert Einstein once said, “A person who never made a mistake never tried anything new.”*/
-var myQuote = "albert einstein once said,\"A person who never made a mistake never tried anything new \" ";
-//backtick
-console.log(myQuote);
+/*7. Number Eight: Write addition, subtraction, multiplication, and division operations that each result
+ in the number 8. Be sure to enclose your operations in print statements to see the results.?*/
+var addition = 4 + 4;
+var subtraction = 10 - 2;
+var multiplication = 2 * 4;
+var division = 32 / 4;
+console.log(addition, subtraction, multiplication, division);
