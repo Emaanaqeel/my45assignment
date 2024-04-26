@@ -1,11 +1,6 @@
 "use strict";
-/*8. You should create four lines that look like this:
-___________________________________________
-
-console.log(5 + 3)
-_____________________________________________
-Your output should simply be four lines with the number 8 appearing once on each line.*/
-console.log(5 + 3);
-console.log(23 - 15);
-console.log(2 * 4);
-console.log(32 / 4);
+/*Favorite Number: Store your favorite number in a variable.
+ Then, using that variable, create a message that reveals your favorite number. Print that message.*/
+let favNumber = 6;
+let message = `my favourite number is "${favNumber}"`;
+console.log(message);
