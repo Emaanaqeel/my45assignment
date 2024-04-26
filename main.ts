@@ -1,19 +1,23 @@
-/*29Favorite Fruit: Make a array of your favorite fruits, and then write a series of
- independent if statements that check for certain fruits in your array.
-• Make a array of your three favorite fruits and call it favorite_fruits.
+/*31 No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
+• If the list is empty, print the message We need to find some users!
 
-• Write five if statements. Each should check whether a certain kind of fruit is in your 
-array. If the fruit is in your array, the if block should print a statement, such as You 
-really like bananas!*/
+• Remove all of the usernames from your array, and make sure the correct message is
+ printed.*/
 
-let favorite_fruits = ["apple","banana","orange"]
+ let userName:string []= ["emaan","admin","erum","asma","laiba","dua"]
+ //remove all the name in the arry
+ userName = []
+//console.log(userName);
 
-if(favorite_fruits.includes("mango")){
-    console.log(`I would like to eat mango`)
+if(userName.length > 0){
+for(let i =0; i < userName.length ; i++){
+    if(userName[i]== "admin") {
+        console.log(`\nhello ${userName[i]},  would you like to see status report?\n`);
+    }
+    else  {
+        console.log(`hello ${userName[i]} thank you for logginig in again!`)
+    }
 }
-else if(favorite_fruits.includes("apple")){
-    console.log(`I would like to eat mango`)
-}
-else{
-    console.log(`fruits are not available`)
+}else {
+    console.log(`we need to find some  users ! `)
 }
