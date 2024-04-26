@@ -1,39 +1,38 @@
 "use strict";
-/*23 Conditional Tests: Write a series of conditional tests. Print a statement describing
-each test and your prediction for the results of each test. Your code should look
-something like this:
+/*24 More Conditional Tests: You don’t have to limit the number of tests you create to 10.
+ If you want to try more comparisons, write more tests. Have at least one True and one
+ False result for each of the following:
+• Tests for equality and inequality with strings
 
-let car = 'subaru';
+• Tests using the lower case function
 
-console.log("Is car == 'subaru'? I predict True.")
+• Numerical tests involving equality and inequality, greater than and less than,
+ greater than or equal to, and less than or equal to
 
-console.log(car == 'subaru')
+• Tests using "and" and "or" operators
 
-• Look closely at your results, and make sure you understand why each line evaluates to
- True or False.
+• Test whether an item is in a array
 
-• Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests
-evaluate to False.*/
-let myCar = "alto";
-console.log(myCar == "alto");
-//10 statements of true or false
-//1
-let myfruit = "Apple";
-console.log(myfruit == "apple");
-console.log(myfruit == "Apple");
-//2
-let myArry = [23, 3, 9];
-console.log(myArry.length == 3);
-console.log(myArry.length == 4);
-//3
-let stdname = "ali";
-console.log(stdname == "ali");
-console.log(stdname == "Ali");
-//4
-let myschool = "Government";
-console.log(myschool == "Government");
-console.log(myschool === "government");
-//5
-let mylang = "urdu";
-console.log(mylang == "urdu");
-console.log(mylang === "Urdu");
+• Test whether an item is not in a array*/
+Object.defineProperty(exports, "__esModule", { value: true });
+//equility and inequility
+let myName = "Ali";
+console.log(myName == "Ali"); //true equal to
+console.log(myName !== "ali"); // true not equal to
+//numberic
+let myNumber = 10;
+console.log(myNumber == 10); //true 
+console.log(myNumber !== 10); //false
+console.log(myNumber > 5); //true    greater than
+console.log(myNumber < 5); //false    less than
+console.log(myNumber <= 5); //false    less than equal to
+console.log(myNumber >= 5); //true    greater than equal to
+//and && ====or|| (pipe)
+let num1 = 10;
+let num2 = 5;
+console.log(num1 > 9 && num2 < 5); // false
+console.log(num1 > 9 || num2 < 5); //true
+let myArry = [2, 4, "ali"];
+let mystring = "ali";
+console.log(Array.isArray(myArry));
+console.log(Array.isArray(mystring));
