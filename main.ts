@@ -1,19 +1,16 @@
-/*38 Cities: Write a function called describe_city() that accepts the name of a city and
- its country. The function should print a simple sentence, such as Karachi is in Pakistan.
-  Give the parameter for the country a default value. Call your function for three 
-  different cities, at least one of which is not in the default country.*/
+/*39 City Names: Write a function called city_country() that takes in the name of a city 
+and its country. The function should return a string formatted like this:
 
-  function describe_city(nameofcity :string  ,country :string = "pakistan"){
-    return `${nameofcity} is in  ${country}`
-  }
-  //3 cities
+"Lahore, Pakistan"
 
-  let city1 = describe_city("karachi")
-  let city2 = describe_city("lahore")
-  let city3 = describe_city("peshwar")
-  let city4 = describe_city("dubai","UAE")
+Call your function with at least three city-country pairs, and print the value that’s 
+returned.*/
 
-  console.log(city1);
-  console.log(city2);
-  console.log(city3);
-  console.log(city4);
+function city_country(city :string ,country: string){
+    return`"${city}, ${country}"`
+
+}
+console.log(city_country("karachi"," pakistan"))
+console.log(city_country("dubai"," UAE"))
+console.log(city_country("london"," united kingdom"))
+console.log(city_country("riyaz"," saudi arabia"))
