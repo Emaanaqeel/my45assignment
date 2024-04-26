@@ -1,25 +1,15 @@
-/*43 Unchanged Magicians: Start with your work from Exercise 40. Call the function
- make_great() with a copy of the array of magicians’ names. Because the original array 
- will be unchanged, return the new array and store it in a separate array. Call 
- show_magicians() with each array to show that you have one array of the original names
-  and one array with the Great added to each magician’s name.*/
+/*44 Sandwiches: Write a function that accepts a array of items a person wants on a
+ sandwich. The function should have one parameter that collects as many items as the 
+ function call provides, and it should print a summary of the sandwich that is being 
+ ordered. Call the function three times, using a different number of arguments each time.*/
 
-  let magiciannames2 =["moosa","pehlaj","subhan","aqeel"]
-
-//making a copy of array
-
-let magiciannamescopy =[...magiciannames2]
-
- function show_magicians(greet:string){
-    let wihtgreetings ="";
-    for(let item of magiciannames2){
-        wihtgreetings +=`${greet} ${item}\n`
-    }
-        return wihtgreetings;
-    
+ function mysandwichs (...item :string[]){
+    return`I want a sandwich of ${item}`
  }
+ let collection1 = mysandwichs("ham","cheese","lettace")
+let collection2 = mysandwichs("turkey","mayo",)
+ let collection3 = mysandwichs()
 
-let mygreetings = show_magicians("hello ");
-let makearray = mygreetings.split('\n')
-console.log(makearray);
-console.log(magiciannames2);
+ console.log(collection1)
+ console.log(collection2)
+ console.log(collection3)
