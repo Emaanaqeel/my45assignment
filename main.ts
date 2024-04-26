@@ -1,32 +1,59 @@
-/* 17 Shrinking Guest List: You just found out that your new dinner table won’t arrive in
- time for the dinner, and you have space for only two guests.
-• Start with your program from Exercise 16. Add a new line that prints a message saying 
-that you can invite only two people for dinner.
+/*Seeing the World: Think of at least five places in the world you’d like to visit.
+• Store the locations in a array. Make sure the array is not in alphabetical order.
 
-• Remove guests from your list one at a time until only two names remain in your list.
- Each time you pop a name from your list, print a message to that person letting them know
-  you’re sorry you can’t invite them to dinner.
+• Print your array in its original order.
 
-• Print a message to each of the two people still on your list, letting them know they’re 
-still invited.*/
+• Print your array in alphabetical order without modifying the actual list.
 
-let myGuest :string[]=["asma","emaan","erum","laiba","shanaya","fatima"];
-console.log(`sorry table is not availble i can invite only two people\n`);
+• Show that your array is still in its original order by printing it.
 
-//remove all 4 last element
+• Print your array in reverse alphabetical order without changing the order of the original list.
 
-let guest1 = myGuest.pop();
-console.log(`sorry ${guest1} you are not invited!`);
+• Show that your array is still in its original order by printing it again.
 
-let guest2 = myGuest.pop();
-console.log(`sorry ${guest2} you are not invited!`);
+• Reverse the order of your list. Print the array to show that its order has changed.
 
-let guest3 = myGuest.pop();
-console.log(`sorry ${guest3} you are not invited!`);
+• Reverse the order of your list again. Print the list to show it’s back to its original
+ order.
 
-let guest4 = myGuest.pop();
-console.log(`sorry ${guest4} you are not invited!`);
+• Sort your array so it’s stored in alphabetical order. Print the array to show that its 
+order has been changed.
 
-for(let i =0;i< myGuest.length; i++){
-    console.log(`hi ${myGuest[i]} you are still invited`)
-}
+• Sort to change your array so it’s stored in reverse alphabetical order.
+ Print the list to show that its order has changed.*/
+
+let myPlaces :string[] =["karachi","uk","dubai","switzerland","palastine"];
+console.log(myPlaces);
+//making a copy of array
+
+let copyofArry = myPlaces.slice();
+let sortedArry = copyofArry.sort();
+console.log(sortedArry)
+
+//printing orignal array
+
+console.log(myPlaces);
+//reverse the array
+
+let copyofArry2 = myPlaces.slice();
+let reversearray= copyofArry2.reverse();
+
+console.log(reversearray);
+// printing orignal array
+
+console.log(myPlaces);
+
+// reverse the order of your arry
+
+let reversearray2 =myPlaces.reverse();
+console.log(reversearray2);
+
+let reverseagain = reversearray2.reverse();
+console.log(reverseagain);// same as orignal array
+
+let sortoriarray = myPlaces.sort();
+console.log(sortoriarray);
+
+let reversesortedarry = sortoriarray.reverse();
+console.log(reversesortedarry);
+
