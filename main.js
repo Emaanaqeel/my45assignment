@@ -1,10 +1,13 @@
 "use strict";
-/*41 Magicians: Make a array of magician’s names. Pass the array to a function called
- show_magicians(), which prints the name of each magician in the array.*/
+/*42 reat Magicians: Start with a copy of your program from Exercise 39. Write a function
+called make_great() that modifies the array of magicians by adding the phrase the Great to
+ each magician’s name. Call show_magicians() to see that the list has actually been
+  modified.*/
 let magiciannames = ["moosa", "pehlaj", "subhan", "aqeel"];
-function show_magicians() {
-    for (let magicianname of magiciannames) {
-        console.log(magicianname);
+function show_magicians(greet) {
+    for (let item of magiciannames) {
+        console.log(greet, item);
     }
 }
-show_magicians();
+show_magicians("hello, how are you Mr.");
+show_magicians("hello  ");
