@@ -1,2 +1,2 @@
-console.log("hello world");
-console.log("hello chachu")
+var personName = "emaan";
+console.log("hello " + personName + " would you like to learn some python today");
