@@ -1,14 +1,12 @@
 "use strict";
-/*44 Sandwiches: Write a function that accepts a array of items a person wants on a
- sandwich. The function should have one parameter that collects as many items as the
- function call provides, and it should print a summary of the sandwich that is being
- ordered. Call the function three times, using a different number of arguments each time.*/
-function mysandwichs(...item) {
-    return `I want a sandwich of ${item}`;
+/*45 Cars: Write a function that stores information about a car in a Object. The function
+ should always receive a manufacturer and a model name. It should then accept an arbitrary
+  number of keyword arguments. Call the function with the required information and two
+  other name-value pairs, such as a color or an optional feature. Print the Object that’s
+  returned to make sure all the information was stored correctly.*/
+function createcar(manifacturer, model, optional) {
+    return Object.assign({ manifacturer,
+        model }, optional);
 }
-let collection1 = mysandwichs("ham", "cheese", "lettace");
-let collection2 = mysandwichs("turkey", "mayo");
-let collection3 = mysandwichs();
-console.log(collection1);
-console.log(collection2);
-console.log(collection3);
+const mycar = createcar("toyota", "corolla", { color: "silver", year: "2024" });
+console.log(mycar);
