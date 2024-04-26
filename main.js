@@ -1,37 +1,17 @@
 "use strict";
-/* 28 Stages of Life: Write an if-else chain that determines a person’s stage of life.
- Set a value for the variable age, and then:
-• If the person is less than 2 years old, print a message that the person is a baby.
+/*30 Hello Admin: Make a array of five or more usernames, including the name 'admin'.
+Imagine you are writing code that will print a greeting to each user after they log in to
+ a website. Loop through the array, and print a greeting to each user:
+• If the username is 'admin', print a special greeting, such as Hello admin, would you
+like to see a status report?
 
-• If the person is at least 2 years old but less than 4, print a message that the person
-is a toddler.
-
-• If the person is at least 4 years old but less than 13, print a message that the person
- is a kid.
-
-• If the person is at least 13 years old but less than 20, print a message that the person
- is a teenager.
-
-• If the person is at least 20 years old but less than 65, print a message that the person
- is an adult.
-
-• If the person is age 65 or older, print a message that the person is an elder.*/
-let personage = 70;
-if (personage < 2) {
-    console.log(`person is a baby`);
-}
-else if (personage >= 2 && personage < 4) {
-    console.log(`person is a toddler`);
-}
-else if (personage >= 4 && personage < 13) {
-    console.log(`person is a kid`);
-}
-else if (personage >= 13 && personage < 20) {
-    console.log(`person is a teenager`);
-}
-else if (personage >= 20 && personage < 65) {
-    console.log(`person is a adult`);
-}
-else if (personage >= 65) {
-    console.log(`person is a elder`);
+• Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.*/
+let userName = ["laiba", "erum", "admin", "asma", "aima"];
+for (let i = 0; i < userName.length; i++) {
+    if (userName[i] == "admin") {
+        console.log(`\nhello ${userName[i]},  would you like to see status report?\n`);
+    }
+    else {
+        console.log(`hello ${userName[i]} thank you for logginig in again!`);
+    }
 }
