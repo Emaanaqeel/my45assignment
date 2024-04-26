@@ -1,16 +1,19 @@
-/* 14 Guest List: If you could invite anyone, living or deceased, to dinner, who would you
- invite? Make a list that includes at least three people you’d like to invite to dinner.
-  Then use your list to print a message to each person, inviting them to dinner*/
+/*15 Changing Guest List: You just heard that one of your guests can’t make the dinner, so
+ you need to send out a new set of invitations. You’ll have to think of someone else to
+  invite.
+  • Start with your program from Exercise 14. Add a print statement at the end of
+   your program stating the name of the guest who can’t make it.
+• Modify your list, replacing the name of the guest who can’t make it with the
+ name of the new person you are inviting.
+• Print a second set of invitation messages, one for each person who is still in
+ your list.*/
 
-  let myGuest : string[] = ["emaan","erum","laiba","muzaina","asma"];
+ let myGuest :string[]=["emaan ","laiba","erum","asma"];
 
-  //1st method loop
+ console.log(`due to some personal reason ${myGuest[1]} will not come on dinner` );
+ myGuest[1]="shanaya";
+console.log(`new list of myGuest who are coming to my dinner\n`);
 
-  for(let i = 0;i< myGuest.length; i++){
-    console.log(`hi ${myGuest[i]} you are invited for dinner on monday at my place\n`);
-  }
-  // 2 method map
-  //myGuest.map((ib)=>{
-  //  console.log(`hi ${myGuest[ib]} you are invited for dinner on monday at my place\n`);
-  
- // })
+ for(let e = 0; e < myGuest.length; e++){
+    console.log(`${e+1}.${myGuest[e]}`);
+ }
